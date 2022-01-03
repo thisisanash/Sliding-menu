@@ -149,7 +149,7 @@ header{
   backdrop-filter: saturate(180%) blur(15px);
   background-color: hsla(0, 0%, 100%, 0.05);
   border-radius: 1px;
-  border-bottom: 2px solid var(--grey-shade-1);
+  border-bottom: 1px solid var(--grey-shade-1);
 }
 
 header .menu-bar{
@@ -176,6 +176,7 @@ header .menu-bar{
   box-shadow: var(--light-shadow);
   padding: 2rem 0rem 2rem 2rem;
   transition: var(--transition);
+  overflow-y: auto;
 }
 .menu.show{
   left: 0;
@@ -210,11 +211,12 @@ header .menu-bar{
   text-align: left;
   list-style: none;
   width: 100%;
-  padding: var(--spacing-m) 0 0 0; 
+  padding: var(--spacing-m) 0 0 0;
+  margin-bottom: var(--spacing-l); 
 }
 .menu .page-links li{
   width: 100%;
-  margin: var(--spacing-l ) 0;
+  margin: var(--spacing) 0 var(--spacing-m);
   border-bottom: 1px solid var(--primery-clr);
 }
 .menu .page-links li a{
